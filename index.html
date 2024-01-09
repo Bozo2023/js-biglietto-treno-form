@@ -7,26 +7,63 @@
         <link rel="stylesheet" href="./assest/style.css">
 </head>
 <body>
-    <h1>calcola il prezzo del biglietto</h1>
+    <main>
+ <h1>calcola il prezzo del biglietto</h1>
+ <div class="info">
     <div class="calcolo">
-        <input type="text" placeholder="entrare il nome e cognome">
-        <input type="text" placeholder="entrare il numero di kilometri">
-        <select  id="eta">
-            <option value="maggiorene">maggiorene</option>
-            <option value="minorenne">minorenne</option>
-            <option value="anziano">anziano</option>
-            <option value="disabile">disabile</option>
-          </select>
-    </div>
-    <div class="bouton">
-        <button id="good">Genera</button>
-        <button id="false">Annulla</button>
+        <div class="name">
+            <label for="name">
+                <span>nome cognome</span>
+            <input  type="text">
+           
+        </label>
+        </div>
+        <div class="kilo">
+            <label for="name">km da percorrere
+            <input id="km" type="text" >
+        </label>
+        </div>
+        <div class="facia">
 
-    </div>
+            <label for="name">fascia eta</label>
+            <select  id="eta">
+                <option id="maggiorene" value="maggiorene">maggiorene</option>
+                <option id="minorenne" value="minorenne">minorenne</option>
+                <option id="anziano" value="anziano">anziano</option>
+                <option value="disabile">disabile</option>
+              </select>
+        </div>
+    </div>   
+    <button id="good">Genera</button>
+    <button id="false">Annulla</button>
+
+ </div>
+    
+       
+       
+    
     <h1> il tuo biglietto</h1>
     <div>
+        <h2>dettaglio del passeggeri</h2>
+        <tr>
+            <th class="recap">nome passeggero</th>
+            <th>offerta</th>
+            <th>carrozza</th>
+            <th>codice cp</th>
+            <th>costo del biglietto</th>
+        </tr>
+        <tr>
+            <td class="recap"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
 
     </div>
+    </main>
+   
     
     <script src="main.js"> </script>
 </body>

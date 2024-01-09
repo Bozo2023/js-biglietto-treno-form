@@ -6,3 +6,23 @@
 body{
     background-color: brown;
 }
+.info{
+    background-color: antiquewhite;
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    align-items: center;
+
+    
+}
+.calcolo{
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    text-align: center;
+}
+label{
+    display: flex;
+    flex-direction: column;
+}
+
