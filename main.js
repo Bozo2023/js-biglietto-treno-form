@@ -11,10 +11,10 @@ Risultato.addEventListener('click',function(){
     //console.log(nomeHtml.value,kmHtml.value,fasciaEtaHtml.value)
 
     console.log(element = document.querySelector('h1.new'));
-    element.style.setProperty('display', 'initial');
+    element.style.display='block';
     
     console.log(element = document.querySelector('.recap'));
-    element.style.setProperty('display', 'initial');
+    element.style.display='block';
     let CodiceCarrozza=RandomNumber(0,10)
     let codiceCp=RandomNumber(100,10000)
     carrozzaHtml.innerHTML= CodiceCarrozza
