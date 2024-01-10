@@ -1,9 +1,25 @@
-const factor=0.21;
-const min=0.2;
-const max=0.4
-let km=document.getElementById("km");
-let age=document.getElementById("eta");
-costo= km*0.21
-document.getElementById("good").addEventListener("click",function(){
-costo.value=(km.value*factor)-(min*(km.value*factor))
+//Inizialisation des constantes.
+const nomeHtml=document.getElementById("nominativo")
+const kmHtml=document.getElementById("km")
+const fasciaEtaHtml =document.getElementById("eta")
+//console.log(nomeHtml.value,kmHtml.value,fasciaEtaHtml.value) 
+const Risultato=document.getElementById("good")
+const carrozzaHtml=document.getElementById("CodiceCarrozza")
+const codiceHtml =document.getElementById("Cp")
+
+Risultato.addEventListener('click',function(){
+    //console.log(nomeHtml.value,kmHtml.value,fasciaEtaHtml.value)
+
+    console.log(element = document.querySelector('h1.new'));
+    element.style.setProperty('display', 'initial');
+    
+    console.log(element = document.querySelector('.recap'));
+    element.style.setProperty('display', 'initial');
+    let CodiceCarrozza=RandomNumber(0,10)
+    let codiceCp=RandomNumber(100,10000)
+    carrozzaHtml.innerHTML= CodiceCarrozza
+    codiceHtml.innerHTML=codiceCp
 })
+function RandomNumber(min,max){
+    return Math.floor(Math.random()*(max-min+1)+min)
+}

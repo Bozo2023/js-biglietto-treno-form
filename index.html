@@ -14,53 +14,60 @@
         <div class="name">
             <label for="name">
                 <span>nome cognome</span>
-            <input  type="text">
+            <input id="nominativo" type="text" name="Nome">
            
         </label>
         </div>
         <div class="kilo">
             <label for="name">km da percorrere
-            <input id="km" type="text" >
+            <input id="km" type="number" name="kilometri">
         </label>
         </div>
         <div class="facia">
 
-            <label for="name">fascia eta</label>
-            <select  id="eta">
-                <option id="maggiorene" value="maggiorene">maggiorene</option>
-                <option id="minorenne" value="minorene">minorenne</option>
-                <option id="anziano" value="anziano">anziano</option>
-                <option value="disabile">disabile</option>
+            <label for="name">fascia d'eta</label>
+            <select  id="eta" name="fasciaEta">
+                <option id="maggiorenne" value="maggiorenne">maggiorene</option>
+                <option id="minorenne" value="minorenne">minorenne</option>
+                <option id="anziano" value="anziano">over 65</option>
               </select>
         </div>
-    </div>   
-    <button id="good">Genera</button>
+    </div> 
+    <div class="bouton">
+     <button id="good">Genera</button>
     <button id="false">Annulla</button>
+    </div>  
+    
 
  </div>
     
        
        
     
-    <h1> il tuo biglietto</h1>
-    <div>
+    <h1 class="new" style="display: none;"> il tuo biglietto</h1>
+    <div class="recap" style="display: none;">
         <h2>dettaglio del passeggeri</h2>
-        <tr>
-            <th class="recap">nome passeggero</th>
-            <th>offerta</th>
-            <th>carrozza</th>
-            <th>codice cp</th>
-            <th>costo del biglietto</th>
-        </tr>
-        <tr>
-            <td class="recap"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td id="costo"></td>
-        </tr>
-
-
+        <table>
+             
+        <thead>
+            <tr>
+                <th > <span>nome passeggero</span></th>
+                <th><span>offerta</span></th>
+                <th><span>carrozza</span></th>
+                <th><span>codice cp</span></th>
+                <th><span>costo del biglietto</span></th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+            <td > <span> nome cognome</span></td>
+            <td> <span>biglietto standard</span></td>
+            <td><span id="CodiceCarrozza">5</span></td>
+            <td><span id="Cp">1235</span></td>
+            <td > <span>2euro</span></td>
+           </tr>
+        </tbody>
+        </table>
     </div>
     </main>
    
