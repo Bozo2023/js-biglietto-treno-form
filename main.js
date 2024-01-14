@@ -6,9 +6,9 @@ const fasciaEtaHtml =document.getElementById("eta")
 const Risultato=document.getElementById("good")
 const carrozzaHtml=document.getElementById("CodiceCarrozza")
 const codiceHtml =document.getElementById("Cp")
-const nomeEndHtml=document.getElementById(Resultname)
-const tipoHtml=document.getElementById(tipo)
-const priceHtml=document.getElementById(price)
+const nomeEndHtml=document.getElementById("Resultname")
+const tipoHtml=document.getElementById("tipo")
+const priceHtml=document.getElementById("price")
 
 
 
@@ -28,7 +28,7 @@ Risultato.addEventListener('click',function(){
     nomeEndHtml.innerHTML=nomeHtml.value
     if(fasciaEtaHtml.value==="minorenne"){
             tipoHtml.innerHTML="biglietto scontato del 20%"
-            priceHtml.innerHTML=((kmHtml.value*0.21)).toFixed(2)*0.8 +"euro"
+            priceHtml.innerHTML=((kmHtml.value*0.21)*0.8).toFixed(2) +"euro"
     }else if(fasciaEtaHtml.value==="maggiorenne"){
         tipoHtml.innerHTML="biglietto standard"
         priceHtml.innerHTML=(kmHtml.value*0.21).toFixed(2) +"euro"

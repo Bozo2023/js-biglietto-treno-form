@@ -61,9 +61,15 @@ button{
     background-color: antiquewhite;
     width: 1000px;
     height: 200px;
-align-items: center;  
+align-items: center; 
+text-align: center; 
+margin: auto;
+padding-top: 20px;
   
 }
 h2{
     text-align: start;
 }
+ #tipo{
+    flex-wrap: wrap;
+ }
